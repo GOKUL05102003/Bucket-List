@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Bucket list</title>
+</head>
+
+<body>
+    <header>
+        <h1>Bucket List</h1>
+        <h2>Bank balance : <span id="bal">0</span> </h2>
+    </header>
+    <main>
+        <section class="inputs">
+            <section class="addmoney">
+                <h2>Add Money to bank</h2>
+                <h3>Amount</h3>
+                <input type="number" id="addamount">
+                <button onclick="addmoney()">Add</button>
+            </section>
+            <section class="product">
+                <h2>New Product</h2>
+                <h3>Product Name</h3>
+                <input type='text' id='pr'>
+                <h3>Amount</h3>
+                <input type='number' id='am'>
+                <button onclick="Add()">Add</button>
+            </section>
+        </section>
+        <section class="listofproduct">
+            <table id="list" border="1">
+                <h1>List of products</h1>
+                <tr>
+                    <th>Product</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
